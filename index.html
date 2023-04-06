@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html class="reset-style">
+<head>
+	<title>1 - 100</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="loop_logo.png">
+</head>
+<body>
+    <div id="popup-container">
+        <div id="popup-content">
+          <h2>Congratulations!</h2>
+          <p>You won the game by correctly writing all the numbers from 1 to 100 in just 
+            <span id="time-passed" style="font-size: 30px; font-weight: bold;">0</span> seconds.<br> Well done!</p>
+            <button class="image-button" onclick="location.reload()">
+                <img src="loop_btn.png">
+            </button>
+        </div>
+      </div>
+      
+    <div class="navbar">
+	    <div id="timer">Timer: 00:<span id="time">60</span></div>
+        <input type="number" id="input" autofocus autocomplete="off">
+	    <div id="timer">Score: <span id="score">0</span>/100</div>
+    </div>
+
+    <div id="game-container"></div>
+    <div class="footer">
+      <div id="highest-score-div"></div>
+      <img src="loop_btn.png" class="loop_logo">
+    </div>
+    
+	<script src="script.js"></script>
+</body>
+</html>

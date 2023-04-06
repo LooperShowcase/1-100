@@ -1,0 +1,135 @@
+body{
+	color: #3d5b99;	
+	background-color: white;
+	transition: background-color 0.2s ease;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#timer {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.navbar{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: baseline;
+	margin: 20px;
+}
+
+#input{
+	padding: 8px;
+	border: 2px solid #bdbdbd;;
+	border-radius: 4px;
+	font-size: 16px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#input:focus {
+	outline: none;
+	border-color: #3d5b99;
+	box-shadow: 0 0 2px 1px #3d5b99;
+}
+
+#game-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.game-row {
+	display: flex;
+	justify-content: center;
+}
+
+.game-cell {
+	width: 150px;
+	height: 25px;
+	border: 2px solid #a3ced6;
+	font-weight: bold;
+	border-radius: 3px;
+	margin: 5px;
+	font-size: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: white;
+  	transition: background-color 0.2s ease;
+}
+
+.left-numbers{
+	font-weight: 100;
+	color: red;
+	border: 1px solid red;
+}
+
+.hidden{
+	display: none;
+
+}
+
+#popup-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  #popup-content {
+	background-color: white;
+	padding: 20px;
+	border-radius: 5px;
+	text-align: center;
+  }
+.image-button {
+	border: 1px solid #bdbdbd;
+	margin-top: 10px;
+	background: none;
+	cursor: pointer;
+	border-radius: 10px;
+	background: rgb(241, 241, 241);
+	padding: 5px 10px 0px 10px;
+}
+.image-button:hover {
+	background: rgb(233, 233, 233);
+}
+.image-button img {
+	display: block;
+	width: 80px;
+	height: auto;
+}
+
+.loop_logo{
+	float: right;
+	width: 7%;
+	position: absolute;
+	right: 10px; 
+	bottom: 0;
+	opacity: 0.5;
+}
+
+.footer{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	margin: -15px 10px 0px 10px;
+	justify-content: space-between;
+}
+
+#highest-score-div{
+	position: absolute;
+	bottom: 10px;
+}
