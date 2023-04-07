@@ -41,7 +41,7 @@ for (let i = 1; i <= 101; i++) {
 
 let input = document.getElementById("input")
 let scoreDiv = document.getElementById("score")
-input.addEventListener("input", () => {
+input.addEventListener("input", (e) => {
     if(!timeStarted){
         startTimer()
     }
@@ -57,7 +57,7 @@ input.addEventListener("input", () => {
             stopGame()
         }
     }
-    else if(parseInt(input.value) > 100 || input.value[0] == '0'){
+    else if(parseInt(input.value) > 100 || input.value[0] == '0' || (e.data && !input.value)){
         document.body.style.backgroundColor = "#ffc107";
     }
     else{
@@ -130,6 +130,5 @@ const updateHighestScore = () => {
 
     localStorage.setItem('highScoreNum', currentScoreNum);
     localStorage.setItem('highScoreSec', currentScoreSec);
-
 
 }
